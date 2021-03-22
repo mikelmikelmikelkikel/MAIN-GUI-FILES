@@ -158,7 +158,7 @@ local MagnifyingGlass = Instance.new("ImageLabel")
 --Properties:
 
 Sidebar.Name = "Sidebar"
-Sidebar.Parent = game.StarterGui.WindowsXP.MainFrame
+Sidebar.Parent = game.Players.LocalPlayer.PlayerGui.WindowsXP.MainFrame
 Sidebar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Sidebar.BackgroundTransparency = 1.000
 Sidebar.Position = UDim2.new(0, 0, 0.0666666701, 0)
