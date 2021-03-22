@@ -121,7 +121,7 @@ bootup.TextWrapped = true
 
 -- Scripts:
 
-local function QCSQCL_fake_script() -- MainFrame.DragScript 
+local function AWGK_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -164,8 +164,8 @@ local function QCSQCL_fake_script() -- MainFrame.DragScript
 		end
 	end)
 end
-coroutine.wrap(QCSQCL_fake_script)()
-local function RHWAXR_fake_script() -- MainFrame.SoundScript 
+coroutine.wrap(AWGK_fake_script)()
+local function XOITN_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local ClickSound = Instance.new("Sound")
@@ -183,8 +183,8 @@ local function RHWAXR_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(RHWAXR_fake_script)()
-local function FDKWJ_fake_script() -- Minimize.MinimizeScript 
+coroutine.wrap(XOITN_fake_script)()
+local function PHSPK_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -195,8 +195,8 @@ local function FDKWJ_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(FDKWJ_fake_script)()
-local function WVRJILZ_fake_script() -- Close.CloseScript 
+coroutine.wrap(PHSPK_fake_script)()
+local function KHIXCXF_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -207,8 +207,8 @@ local function WVRJILZ_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(WVRJILZ_fake_script)()
-local function PEEP_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(KHIXCXF_fake_script)()
+local function UZMCRV_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -219,8 +219,8 @@ local function PEEP_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(PEEP_fake_script)()
-local function RWLTGMN_fake_script() -- windowslmao.startup 
+coroutine.wrap(UZMCRV_fake_script)()
+local function MURCUD_fake_script() -- windowslmao.startup 
 	local script = Instance.new('LocalScript', windowslmao)
 
 	local suSound = Instance.new("Sound", script.Parent)
@@ -284,8 +284,8 @@ local function RWLTGMN_fake_script() -- windowslmao.startup
 	
 	
 end
-coroutine.wrap(RWLTGMN_fake_script)()
-local function SRPBNS_fake_script() -- bootup.text 
+coroutine.wrap(MURCUD_fake_script)()
+local function WHCNZG_fake_script() -- bootup.text 
 	local script = Instance.new('LocalScript', bootup)
 
 	while true do
@@ -297,4 +297,4 @@ local function SRPBNS_fake_script() -- bootup.text
 		script.Parent.Text = "booting up or smthing..."
 	end
 end
-coroutine.wrap(SRPBNS_fake_script)()
+coroutine.wrap(WHCNZG_fake_script)()
