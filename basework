@@ -123,7 +123,7 @@ bootup.TextWrapped = true
 
 local function UEGTBBC_fake_script() -- MainFrame.DragScript 
 	local script = Instance.new('LocalScript', MainFrame)
-
+	
 	local UserInputService = game:GetService("UserInputService")
 	
 	local gui = script.Parent
@@ -167,7 +167,7 @@ end
 coroutine.wrap(UEGTBBC_fake_script)()
 local function PTDOVX_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
-
+	script.Name = "SoundScript"
 	local ClickSound = Instance.new("Sound")
 	ClickSound.Name = "ClickSound"
 	ClickSound.Parent = script
