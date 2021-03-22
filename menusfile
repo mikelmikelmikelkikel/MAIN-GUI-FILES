@@ -212,7 +212,7 @@ Audio.Size = UDim2.new(0, 27, 0, 27)
 Audio.Image = "rbxassetid://6551735554"
 
 Menus.Name = "Menus"
-Menus.Parent = game.StarterGui.WindowsXP.MainFrame
+Menus.Parent = game.Players.LocalPlayer.PlayerGui.WindowsXP.MainFrame
 Menus.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Menus.BackgroundTransparency = 1.000
 Menus.Position = UDim2.new(0.0971223041, 0, 0.0666666701, 0)
