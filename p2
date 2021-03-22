@@ -1,0 +1,1234 @@
+-- Scripts:
+
+local function SKYUZXJ_fake_script() -- Minimize.MinimizeScript 
+	local script = Instance.new('LocalScript', Minimize)
+
+	function leftClick()
+		script.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		script.Parent.Parent.Parent.Position = UDim2.new(0.02,-0,0.966,-0)
+	end 
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(SKYUZXJ_fake_script)()
+local function DYGXVGV_fake_script() -- Close.CloseScript 
+	local script = Instance.new('LocalScript', Close)
+
+	function leftClick()
+		script.Parent.Parent.Parent.SoundScript:WaitForChild("ShutdownSound"):Play()
+		script.Parent.Parent.Parent.Parent:Destroy()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(DYGXVGV_fake_script)()
+local function BBYSU_fake_script() -- Maximize.MaximizeScript 
+	local script = Instance.new('LocalScript', Maximize)
+
+	function leftClick()
+		script.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		script.Parent.Parent.Parent.Position = UDim2.new(0.01, 0,0.181, 0)
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(BBYSU_fake_script)()
+local function RMMSHV_fake_script() -- Arrow.OpenScript 
+	local script = Instance.new('LocalScript', Arrow)
+
+	local Open = false
+	
+	function leftClick()
+		script.Parent.Image = "rbxassetid://6531531478"
+		script.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		if Open == false  
+		then script.Parent.Parent.Buttons.Visible = true
+			Open = true
+		else
+			script.Parent.Image = "rbxassetid://6531531599"
+			script.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			Open = false
+			script.parent.Parent.Buttons.Visible = false
+		end
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(RMMSHV_fake_script)()
+local function MGNE_fake_script() -- Character.LocalScript 
+	local script = Instance.new('LocalScript', Character)
+
+	local Menus = script.Parent.Parent.Parent.Parent.Menus
+	
+	
+	function leftClick()
+		script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		Menus.Welcome.Visible = false
+		Menus.Character.Visible = true
+		Menus.Scripts.Visible = false
+		Menus.HatScripts.Visible = false
+		Menus.AudioLogger.Visible = false
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(MGNE_fake_script)()
+local function ZEUF_fake_script() -- Scripts.LocalScript 
+	local script = Instance.new('LocalScript', Scripts)
+
+	local Menus = script.Parent.Parent.Parent.Parent.Menus
+	
+	
+	function leftClick()
+		script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		Menus.Welcome.Visible = false
+		Menus.Character.Visible = false
+		Menus.Scripts.Visible = true
+		Menus.HatScripts.Visible = false
+		Menus.AudioLogger.Visible = false
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(ZEUF_fake_script)()
+local function THBNTJI_fake_script() -- HatScripts.LocalScript 
+	local script = Instance.new('LocalScript', HatScripts)
+
+	local Menus = script.Parent.Parent.Parent.Parent.Menus
+	
+	
+	function leftClick()
+		script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		Menus.Welcome.Visible = false
+		Menus.Character.Visible = false
+		Menus.Scripts.Visible = false
+		Menus.HatScripts.Visible = true
+		Menus.AudioLogger.Visible = false
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(THBNTJI_fake_script)()
+local function AGSNA_fake_script() -- Audio.LocalScript 
+	local script = Instance.new('LocalScript', Audio)
+
+	local Menus = script.Parent.Parent.Parent.Parent.Menus
+	
+	
+	function leftClick()
+		script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		Menus.Welcome.Visible = false
+		Menus.Character.Visible = false
+		Menus.Scripts.Visible = false
+		Menus.HatScripts.Visible = false
+		Menus.AudioLogger.Visible = true
+	end
+	
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(AGSNA_fake_script)()
+local function WGNHYAY_fake_script() -- Set.SetValue 
+	local script = Instance.new('LocalScript', Set)
+
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+	local Humanoid = Character:WaitForChild("Humanoid")
+	local WalkspeedValue = script.Parent.Parent.SpeedBox
+	
+	function leftClick()
+		if WalkspeedValue.Text == "" then WalkspeedValue.PlaceholderText = "Invalid"
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			wait(2)
+			WalkspeedValue.PlaceholderText = "Walkspeed"
+		else
+			Humanoid.WalkSpeed = WalkspeedValue.Text
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(WGNHYAY_fake_script)()
+local function RVTXDS_fake_script() -- Set_2.SetValue 
+	local script = Instance.new('LocalScript', Set_2)
+
+	local Player = game.Players.LocalPlayer
+	local Character = Player.Character
+	local Humanoid = Character:WaitForChild("Humanoid")
+	local JumpValue = script.Parent.Parent.JumpBox
+	
+	function leftClick()
+		if JumpValue.Text == "" then JumpValue.PlaceholderText = "Invalid"
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			wait(2)
+			JumpValue.PlaceholderText = "Jump Height"
+		else
+			Humanoid.JumpPower = JumpValue.Text
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(RVTXDS_fake_script)()
+local function KTNGKPC_fake_script() -- Checkbox.SetValue 
+	local script = Instance.new('LocalScript', Checkbox)
+
+	
+	
+	local player = game.Players.LocalPlayer
+	local mouse = player:GetMouse()
+	local runservice = game:GetService("RunService")
+	local noclip = false
+	
+	runservice.Stepped:Connect(function()
+		if noclip then
+			player.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	
+	function leftClick()
+		if noclip == false then
+			noclip = true
+			script.Parent.Image = "rbxassetid://6531499566"
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		else
+			noclip = false
+			script.Parent.Image = "rbxassetid://6531499312"
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(KTNGKPC_fake_script)()
+local function IRIZK_fake_script() -- Checkbox_2.SetValue 
+	local script = Instance.new('LocalScript', Checkbox_2)
+
+	_G.infinjump = false
+	
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+				local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+				Humanoid:ChangeState("Jumping")
+				wait(0.1)
+				Humanoid:ChangeState("Seated")
+			end
+		end
+	end)
+	
+	function leftClick()
+		if _G.infinjump == false then
+			_G.infinjump = true
+			script.Parent.Image = "rbxassetid://6531499566"
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		else
+			_G.infinjump = false
+			script.Parent.Image = "rbxassetid://6531499312"
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(IRIZK_fake_script)()
+local function PMWXKNY_fake_script() -- Checkbox_3.SetValue 
+	local script = Instance.new('LocalScript', Checkbox_3)
+
+	local obj = game.workspace
+	function XrayOn(obj) --Enables xray
+		
+		for _,v in pairs(obj:GetChildren()) do
+			if (v:IsA("BasePart")) and not v.Parent:FindFirstChild("Humanoid") then
+				v.LocalTransparencyModifier = 0.75
+			end
+			XrayOn(v)
+		end
+	end
+	
+	function XrayOff(obj) --Disables xray
+		
+		for _,v in pairs(obj:GetChildren()) do
+			if (v:IsA("BasePart")) and not v.Parent:FindFirstChild("Humanoid") then
+				v.LocalTransparencyModifier = 0
+			end XrayOff(v)
+		end
+	end
+	
+	local toggle = false
+	
+	script.Parent.MouseButton1Click:Connect(function()	
+		if toggle == false then
+			toggle = true
+			script.Parent.Image = "rbxassetid://6531499566"
+			XrayOn(obj)
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		else
+			toggle = false
+			script.Parent.Image = "rbxassetid://6531499312"
+			XrayOff(obj)
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end)
+end
+coroutine.wrap(PMWXKNY_fake_script)()
+local function PBEUQZ_fake_script() -- Checkbox_4.SetValue 
+	local script = Instance.new('LocalScript', Checkbox_4)
+
+	flying = false
+	lplayer = game.Players.LocalPlayer
+	speedget = 1
+	speedfly = 1
+	Mouse = lplayer:GetMouse()
+	checkboxToggled = false
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if checkboxToggled == false 
+		then checkboxToggled = true 
+			script.Parent.Image = "rbxassetid://6531499566" 
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		else checkboxToggled = false 
+			script.Parent.Image = "rbxassetid://6531499312"
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		
+		end
+	
+	
+	
+	Mouse.KeyDown:Connect(function(k)
+		if k == "x" then
+			if checkboxToggled == true then
+					if flying == false then
+						flying = true 
+						
+				script.Parent.Image = "rbxassetid://6531499566"
+	
+				repeat wait() until lplayer and lplayer.Character and lplayer.Character:FindFirstChild('HumanoidRootPart') and lplayer.Character:FindFirstChild('Humanoid')
+				repeat wait() until Mouse
+	
+				local T = lplayer.Character.HumanoidRootPart
+				local CONTROL = {F = 0, B = 0, L = 0, R = 0}
+				local lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+				local SPEED = speedget
+	
+				local function fly()
+					local BG = Instance.new('BodyGyro', T)
+					local BV = Instance.new('BodyVelocity', T)
+					BG.P = 9e4
+					BG.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+					BG.cframe = T.CFrame
+					BV.velocity = Vector3.new(0, 0.1, 0)
+					BV.maxForce = Vector3.new(9e9, 9e9, 9e9)
+					spawn(function()
+						repeat wait()
+							lplayer.Character.Humanoid.PlatformStand = true
+							if CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0 then
+								SPEED = 50
+							elseif not (CONTROL.L + CONTROL.R ~= 0 or CONTROL.F + CONTROL.B ~= 0) and SPEED ~= 0 then
+								SPEED = 0
+							end
+							if (CONTROL.L + CONTROL.R) ~= 0 or (CONTROL.F + CONTROL.B) ~= 0 then
+								BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (CONTROL.F + CONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(CONTROL.L + CONTROL.R, (CONTROL.F + CONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+								lCONTROL = {F = CONTROL.F, B = CONTROL.B, L = CONTROL.L, R = CONTROL.R}
+							elseif (CONTROL.L + CONTROL.R) == 0 and (CONTROL.F + CONTROL.B) == 0 and SPEED ~= 0 then
+								BV.velocity = ((workspace.CurrentCamera.CoordinateFrame.lookVector * (lCONTROL.F + lCONTROL.B)) + ((workspace.CurrentCamera.CoordinateFrame * CFrame.new(lCONTROL.L + lCONTROL.R, (lCONTROL.F + lCONTROL.B) * 0.2, 0).p) - workspace.CurrentCamera.CoordinateFrame.p)) * SPEED
+							else
+								BV.velocity = Vector3.new(0, 0.1, 0)
+							end
+							BG.cframe = workspace.CurrentCamera.CoordinateFrame
+						until not flying
+						CONTROL = {F = 0, B = 0, L = 0, R = 0}
+						lCONTROL = {F = 0, B = 0, L = 0, R = 0}
+						SPEED = 0
+						BG:destroy()
+						BV:destroy()
+						lplayer.Character.Humanoid.PlatformStand = false
+					end)
+				end
+				Mouse.KeyDown:connect(function(KEY)
+					if KEY:lower() == 'w' then
+						CONTROL.F = speedfly
+					elseif KEY:lower() == 's' then
+						CONTROL.B = -speedfly
+					elseif KEY:lower() == 'a' then
+						CONTROL.L = -speedfly 
+					elseif KEY:lower() == 'd' then 
+						CONTROL.R = speedfly
+					end
+				end)
+				Mouse.KeyUp:connect(function(KEY)
+					if KEY:lower() == 'w' then
+						CONTROL.F = 0
+					elseif KEY:lower() == 's' then
+						CONTROL.B = 0
+					elseif KEY:lower() == 'a' then
+						CONTROL.L = 0
+					elseif KEY:lower() == 'd' then
+						CONTROL.R = 0
+					end
+				end)
+				fly()
+			else
+				flying = false
+				
+				lplayer.Character.Humanoid.PlatformStand = false
+				end
+			
+			end
+			end
+		end)
+		end)
+end
+coroutine.wrap(PBEUQZ_fake_script)()
+local function MKRD_fake_script() -- Checkbox_5.SetValue 
+	local script = Instance.new('LocalScript', Checkbox_5)
+
+	
+		local Player = game.Players.LocalPlayer
+		local Mouse = Player:GetMouse()
+		local UserInputService = game:GetService('UserInputService')
+	
+		local HoldingControl = false
+		local Checked = false
+	
+		Mouse.Button1Down:connect(function()
+			if HoldingControl and Checked then
+				Player.Character:MoveTo(Mouse.Hit.p)
+			end
+		end)
+	
+		UserInputService.InputBegan:connect(function(Input, Processed)
+			if Input.UserInputType == Enum.UserInputType.Keyboard then
+				if Input.KeyCode == Enum.KeyCode.LeftControl then
+					HoldingControl = true
+				elseif Input.KeyCode == Enum.KeyCode.RightControl then
+					HoldingControl = true 
+				end
+			end
+		end)
+	
+		UserInputService.InputEnded:connect(function(Input, Processed)
+			if Input.UserInputType == Enum.UserInputType.Keyboard then
+				if Input.KeyCode == Enum.KeyCode.LeftControl then
+					HoldingControl = false
+				elseif Input.KeyCode == Enum.KeyCode.RightControl then
+					HoldingControl = false
+				end
+			end
+		end)
+	
+	script.Parent.MouseButton1Down:connect(function()
+		script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		if Checked == false then Checked = true script.Parent.Image = "rbxassetid://6531499566"  else Checked = false script.Parent.Image = "rbxassetid://6531499312"
+			
+		end
+	end)
+	
+	
+	
+end
+coroutine.wrap(MKRD_fake_script)()
+local function QXOWW_fake_script() -- Checkbox_6.SetValue 
+	local script = Instance.new('LocalScript', Checkbox_6)
+
+	local crashy = true -- CHANGE THIS TO TRUE IF IT CRASHES THIS GAME
+	local on = false
+	if game.CoreGui:FindFirstChild('ESP') then
+		game.CoreGui.ESP:Destroy()
+	elseif game.Players.LocalPlayer.PlayerGui:FindFirstChild('ESP') then
+		game.Players.LocalPlayer.PlayerGui.ESP:Destroy()
+	end
+	local but = script.Parent
+	
+	function doit(hey)
+		local t1 = Instance.new('SurfaceGui',hey)
+		t1.AlwaysOnTop = true
+		local t1g = Instance.new('Frame',t1)
+		t1g.Size = UDim2.new(1,0,1,0)
+		t1g.BackgroundColor3 = t1.Parent.BrickColor.Color
+		local t2 = Instance.new('SurfaceGui',hey)      
+		t2.AlwaysOnTop = true
+		t2.Face = Enum.NormalId.Right
+		local t2g = Instance.new('Frame',t2)
+		t2g.Size = UDim2.new(1,0,1,0)
+		t2g.BackgroundColor3 = t2.Parent.BrickColor.Color
+		local t3 = Instance.new('SurfaceGui',hey)
+		t3.AlwaysOnTop = true
+		t3.Face = Enum.NormalId.Left
+		local t3g = Instance.new('Frame',t3)
+		t3g.Size = UDim2.new(1,0,1,0)
+		t3g.BackgroundColor3 = t3.Parent.BrickColor.Color
+		local t4 = Instance.new('SurfaceGui',hey)
+		t4.AlwaysOnTop = true
+		t4.Face = Enum.NormalId.Back
+		local t4g = Instance.new('Frame',t4)
+		t4g.Size = UDim2.new(1,0,1,0)
+		t4g.BackgroundColor3 = t4.Parent.BrickColor.Color
+		local t5 = Instance.new('SurfaceGui',hey)
+		t5.AlwaysOnTop = true
+		t5.Face = Enum.NormalId.Top
+		local t5g = Instance.new('Frame',t5)
+		t5g.Size = UDim2.new(1,0,1,0)
+		t5g.BackgroundColor3 = t5.Parent.BrickColor.Color
+		local t6 = Instance.new('SurfaceGui',hey)
+		t6.AlwaysOnTop = true
+		t6.Face = Enum.NormalId.Bottom
+		local t6g = Instance.new('Frame',t6)
+		t6g.Size = UDim2.new(1,0,1,0)
+		t6g.BackgroundColor3 = t6.Parent.BrickColor.Color
+	end
+	function undo(chr)
+		for i,v in pairs(chr:GetChildren()) do
+			if v.ClassName == "Part" or v.ClassName == "MeshPart" then
+				for a,c in pairs(v:GetChildren()) do
+					if c.ClassName == "SurfaceGui" then
+						c:Destroy()
+					end
+					if c.ClassName == "BillboardGui" and c.Name == "thingyye" then
+						c:Destroy()
+					end
+				end
+			end
+		end
+	end
+	
+	
+	but.MouseButton1Down:connect(function()
+		if but.Image == "rbxassetid://6531499312" then 
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			but.Image = "rbxassetid://6531499566"
+			on = true
+			for i,v in pairs(game.Players:GetChildren()) do
+				if v.Character ~= game.Players.LocalPlayer.Character and v.Character.Head:FindFirstChild('ScreenGui') == nil then
+					if v.Character:FindFirstChild('Head') then
+						local bill = Instance.new('BillboardGui',v.Character.Head)
+						bill.Name = "thingyye"
+						bill.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+						bill.Active = true
+						bill.LightInfluence = 1.000
+						bill.Size = UDim2.new(0, 200, 0, 50)
+						bill.AlwaysOnTop = true
+						local txt = Instance.new('TextLabel',bill)
+						txt.Text = v.Name
+						txt.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+						txt.BackgroundTransparency = 1.000
+						txt.Position = UDim2.new(0, 0, 0, -40)
+						txt.Size = UDim2.new(0, 200, 0, 50)
+						txt.Font = Enum.Font.Cartoon
+						txt.TextColor3 = Color3.fromRGB(255, 255, 255)
+						txt.TextScaled = true
+						txt.TextSize = 14.000
+						txt.TextStrokeTransparency = 0.000
+						txt.TextWrapped = true
+					end
+					for a,c in pairs(v.Character:GetChildren()) do
+						if c.ClassName == "MeshPart" and c.Transparency ~= 1 then
+							doit(c)
+						elseif c.ClassName == "Part" and c.Transparency ~= 1 then
+							doit(c)
+						end
+					end
+				end
+			end
+		else
+			but.Image = "rbxassetid://6531499312"
+			on = false
+			script.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			for i,v in pairs(game.Players:GetChildren()) do
+				undo(v.Character)
+			end
+		end
+	end)
+	
+	for i,v in pairs(game.Players:GetChildren()) do
+		v.CharacterAdded:connect(function()
+			v.Character:WaitForChild('Head')
+			wait(1)
+			if on == true then
+				if v.Character ~= game.Players.LocalPlayer.Character and v.Character.Head:FindFirstChild('ScreenGui') == nil then
+					if v.Character:FindFirstChild('Head') then
+						local bill = Instance.new('BillboardGui',v.Character.Head)
+						bill.Name = "thingyye"
+						bill.AlwaysOnTop = true
+						bill.Size = UDim2.new(2,1,2)
+						bill.Adornee = v.Character.Head
+						local txt = Instance.new('TextLabel',bill)
+						txt.Text = v.Name
+						txt.BackgroundTransparency = 1
+						txt.Size = UDim2.new(1,0,1,0)
+						txt.TextColor3 = v.TeamColor.Color
+					end
+					for a,c in pairs(v.Character:GetChildren()) do
+						if c.ClassName == "MeshPart" and c.Transparency ~= 1 then
+							doit(c)
+						elseif c.ClassName == "Part" and c.Transparency ~= 1 then
+							doit(c)
+						end
+					end
+				end
+			end
+		end)
+	end  
+	
+	game.Players.PlayerAdded:connect(function(v)
+		v.CharacterAdded:connect(function()
+			v.Character:WaitForChild('Head')
+			wait(1)
+			if on == true then
+				if v.Character ~= game.Players.LocalPlayer.Character and v.Character.Head:FindFirstChild('ScreenGui') == nil then
+					if v.Character:FindFirstChild('Head') then
+						local bill = Instance.new('BillboardGui',v.Character.Head)
+						bill.Name = "thingyye"
+						bill.AlwaysOnTop = true
+						bill.Size = UDim2.new(2,1,2)
+						bill.Adornee = v.Character.Head
+						local txt = Instance.new('TextLabel',bill)
+						txt.Text = v.Name
+						txt.BackgroundTransparency = 1
+						txt.Size = UDim2.new(1,0,1,0)
+						txt.TextColor3 = v.TeamColor.Color
+					end
+					for a,c in pairs(v.Character:GetChildren()) do
+						if c.ClassName == "MeshPart" and c.Transparency ~= 1 then
+							doit(c)
+						elseif c.ClassName == "Part" and c.Transparency ~= 1 then
+							doit(c)
+						end
+					end
+				end
+			end
+		end)
+	end)
+end
+coroutine.wrap(QXOWW_fake_script)()
+local function RFUEGMQ_fake_script() -- AssassinButton.ScriptLoader 
+	local script = Instance.new('LocalScript', AssassinButton)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/mikelmikelmikelkikel/assassingui/main/guis",true))()
+		script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(RFUEGMQ_fake_script)()
+local function LHVICLQ_fake_script() -- ChatBypassButton.ScriptLoader 
+	local script = Instance.new('LocalScript', ChatBypassButton)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/bedra45/chetbypasser/main/chetbypass'))()
+			script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(LHVICLQ_fake_script)()
+local function LQLI_fake_script() -- MM2Button.ScriptLoader 
+	local script = Instance.new('LocalScript', MM2Button)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/mikelmikelmikelkikel/mm2/main/mm2",true))()
+			
+			script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(LQLI_fake_script)()
+local function TTUNKSW_fake_script() -- NullwareHubButton.ScriptLoader 
+	local script = Instance.new('LocalScript', NullwareHubButton)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			loadstring(game:HttpGet("https://gist.githubusercontent.com/M6HqVBcddw2qaN4s/37eef2120d509b37b31fa73944ab2361/raw/kT2fVEFnzDfCRXAP",true))()
+			script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(TTUNKSW_fake_script)()
+local function TUYKGWS_fake_script() -- ProjectPokeButton.ScriptLoader 
+	local script = Instance.new('LocalScript', ProjectPokeButton)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/mikelmikelmikelkikel/projectpokespawn/main/projectpokespawn",true))()
+			script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(TUYKGWS_fake_script)()
+local function ADTEF_fake_script() -- SSSButton.ScriptLoader 
+	local script = Instance.new('LocalScript', SSSButton)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Just-Egg-Salad/roblox-scripts/main/sushi%20shop%20simulator",true))()
+			
+			script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(ADTEF_fake_script)()
+local function WBHBSI_fake_script() -- SpecHub1Button.ScriptLoader 
+	local script = Instance.new('LocalScript', SpecHub1Button)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			loadstring(game:HttpGet("https://pastebin.com/raw/4xJCJA7T",true))()
+			
+			script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(WBHBSI_fake_script)()
+local function JQSOSY_fake_script() -- SpecHub2Button.ScriptLoader 
+	local script = Instance.new('LocalScript', SpecHub2Button)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			loadstring(game:HttpGet("https://pastebin.com/raw/JepZy4GB",true))()
+			script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(JQSOSY_fake_script)()
+local function OMZJSW_fake_script() -- WheresTheBabyButton.ScriptLoader 
+	local script = Instance.new('LocalScript', WheresTheBabyButton)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/mikelmikelmikelkikel/wtbexe/main/wtbexe",true))()
+			script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(OMZJSW_fake_script)()
+local function CFMS_fake_script() -- PageSelector.PageScript 
+	local script = Instance.new('LocalScript', PageSelector)
+
+	local pageLayout = script.Parent.Parent.Pages.UIPageLayout
+	local nextButton = script.Parent.NextButton
+	local prevButton = script.Parent.PrevButton
+	local totalPages = 1
+	local currentPage = 1
+	local pageLabel = script.Parent.PageLabel
+	
+	nextButton.MouseButton1Click:Connect( function ()
+		pageLayout:Next()
+		script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		if currentPage == totalPages then print("On last page!")
+		else
+			currentPage = currentPage + 1
+	
+			pageLabel.Text = ""..currentPage.."  /  "..totalPages..""
+		end
+	end)
+	
+	
+	prevButton.MouseButton1Click:Connect( function ()
+		pageLayout:Previous()
+		script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		if currentPage == 1 then print("On first page!")
+		else
+			currentPage = currentPage - 1
+			pageLabel.Text = ""..currentPage.."  /  "..totalPages..""
+		end
+	end)
+	
+	pageLayout:JumpToIndex( 0 )
+end
+coroutine.wrap(CFMS_fake_script)()
+local function QPIV_fake_script() -- randomizedtext.randomized; 
+	local script = Instance.new('LocalScript', randomizedtext)
+
+	local Sentences = {"ahahahaahah pointy plane go BRRRRRRRRRRRRRRR", "420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420", "😳 bro?", "cnn fakes their news cause gay", "we had to call the popo to fix a pipe in the pines house today LOL", "buddy is currently on my epik blue gaming chair trying to eat my mcdonalds sandwhich","biden licks little boys","ranch dip","this text is randomly generated lmao","biden is a garbage president","diet coke tastes very good L","cheese", "alpharad makes good content", "follow DietCokeTastesGood on roblox or you're gay", "only biden supporters like pepsi", "f", "windows pog?!??!?", "ivan is cool", "#superstraight", "heterosexual is the best kind of sexual", "alt+f4 pls", "i just ate a Chobani flip S'more yogurt and it was  good", "bottom text", "top text", "69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69", "Ivan is eating yummy chips rn and they r very pog", "drippy drippy goku XDXDXD"}
+	while true do 
+		script.Parent.Text = Sentences[math.random(1,#Sentences)]
+		wait(999999969999999) 
+	end
+end
+coroutine.wrap(QPIV_fake_script)()
+local function GCDTCR_fake_script() -- randomizedimage.randomized; 
+	local script = Instance.new('LocalScript', randomizedimage)
+
+	local Images = {"rbxassetid://5584500731", "rbxassetid://5610942639", "rbxassetid://5160712341", "rbxassetid://6549351471", "rbxassetid://6550268109", "rbxassetid://5655028554", "rbxassetid://4933468761", "rbxassetid://5710497007", "rbxassetid://5741657918", "rbxassetid://5768229099", "rbxassetid://5898091102", "rbxassetid://5952824955", "rbxassetid://5947794308", "rbxassetid://6032841223", "rbxassetid://4806105685", "rbxassetid://6093779811", "rbxassetid://6117941170", "rbxassetid://6116415183", "rbxassetid://6117966004", "rbxassetid://6109937685", "rbxassetid://5460374612", "rbxassetid://6165969352", "rbxassetid://6002645804", "rbxassetid://6197068901", "rbxassetid://6370900679", "rbxassetid://6243555061", "rbxassetid://6251050057", "rbxassetid://374838431", "rbxassetid://6523940003", "rbxassetid://6447447883"}
+	while true do 
+		script.Parent.Image = Images[math.random(1,#Images)]
+		wait(999999969999999) 
+	end
+end
+coroutine.wrap(GCDTCR_fake_script)()
+local function KINQ_fake_script() -- ScriptLoadButton.ScriptLoader 
+	local script = Instance.new('LocalScript', ScriptLoadButton)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			loadstring(game:HttpGet("https://pastebin.com/raw/xH2qYJ9B", true))()
+			Spawned = true
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		else
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ErrorSound"):Play()
+			script.Parent.Text = "Already Loaded"
+			wait(2)
+			script.Parent.Text = "Brick Car"
+			
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(KINQ_fake_script)()
+local function XEQINH_fake_script() -- ViewHats.ViewHats 
+	local script = Instance.new('LocalScript', ViewHats)
+
+	local HatImageHolder = script.Parent.Parent.Parent.Parent.Parent.HatViewer
+	local Hat1 = HatImageHolder.Hat1
+	local Hat2 = HatImageHolder.Hat2
+	local Hat3 = HatImageHolder.Hat3
+	local Hat4 = HatImageHolder.Hat4
+	local Hat5 = HatImageHolder.Hat5
+	local Hat6 = HatImageHolder.Hat6
+	local Hat7 = HatImageHolder.Hat7
+	local Hat8 = HatImageHolder.Hat8
+	local Hat9 = HatImageHolder.Hat9
+	local Hat10 = HatImageHolder.Hat10
+	local Clicked = false
+	
+	function leftClick()
+		if Clicked == false then Clicked = true
+			Hat1.HatImage.Image = "rbxassetid://6540089495" Hat1.Visible = true Hat1.HatName.Text = "Eltoria RX750"
+			Hat2.HatImage.Image = "rbxassetid://6540089362" Hat2.Visible = true Hat2.HatName.Text = "Pal Hair"
+			Hat3.HatImage.Image = "rbxassetid://6540089250" Hat3.Visible = true Hat3.HatName.Text = "Red Roblox Cap"
+			Hat4.HatImage.Image = "rbxassetid://6540089151" Hat4.Visible = true Hat4.HatName.Text = "Lavender Updo"
+			Hat5.HatImage.Image = "rbxassetid://6540088977" Hat5.Visible = true Hat5.HatName.Text = "ROBLOX Girl Hair"
+			Hat6.HatImage.Image = "" Hat6.Visible = false Hat6.HatName.Text = ""
+			Hat7.HatImage.Image = "" Hat7.Visible = false Hat7.HatName.Text = "" 
+			Hat8.HatImage.Image = "" Hat8.Visible = false Hat8.HatName.Text = ""
+			Hat9.HatImage.Image = "" Hat9.Visible = false Hat9.HatName.Text = ""
+			Hat10.HatImage.Image = "" Hat10.Visible = false Hat10.HatName.Text = ""
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("SoundScript"):Play()
+		else
+			Clicked = false
+			Hat1.Visible = false
+			Hat2.Visible = false
+			Hat3.Visible = false
+			Hat4.Visible = false
+			Hat5.Visible = false
+			Hat6.Visible = false
+			Hat7.Visible = false
+			Hat8.Visible = false
+			Hat9.Visible = false
+			Hat10.Visible = false
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("SoundScript"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(XEQINH_fake_script)()
+local function LZGZT_fake_script() -- ScriptLoadButton_2.ScriptLoader 
+	local script = Instance.new('LocalScript', ScriptLoadButton_2)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			loadstring(game:HttpGet("https://pastebin.com/raw/KqcTFiad", true))()
+			Spawned = true
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		else
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ErrorSound"):Play()
+			script.Parent.Text = "Already Loaded"
+			wait(2)
+			script.Parent.Text = "Sword Wings"
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(LZGZT_fake_script)()
+local function TZUUR_fake_script() -- ViewHats_2.ViewHats 
+	local script = Instance.new('LocalScript', ViewHats_2)
+
+	local HatImageHolder = script.Parent.Parent.Parent.Parent.Parent.HatViewer
+	local Hat1 = HatImageHolder.Hat1
+	local Hat2 = HatImageHolder.Hat2
+	local Hat3 = HatImageHolder.Hat3
+	local Hat4 = HatImageHolder.Hat4
+	local Hat5 = HatImageHolder.Hat5
+	local Hat6 = HatImageHolder.Hat6
+	local Hat7 = HatImageHolder.Hat7
+	local Hat8 = HatImageHolder.Hat8
+	local Hat9 = HatImageHolder.Hat9
+	local Hat10 = HatImageHolder.Hat10
+	local Clicked = false
+	
+	function leftClick()
+		if Clicked == false then Clicked = true
+			Hat1.HatImage.Image = "rbxassetid://6546894454" Hat1.Visible = true Hat1.HatName.Text = "Demonic Greatsword"
+			Hat2.HatImage.Image = "rbxassetid://6546894336" Hat2.Visible = true Hat2.HatName.Text = "Corrupt Demonic Greatsword"
+			Hat3.HatImage.Image = "rbxassetid://6546894230" Hat3.Visible = true Hat3.HatName.Text = "Golden Demonic Greatsword"
+			Hat4.HatImage.Image = "rbxassetid://6546894116" Hat4.Visible = true Hat4.HatName.Text = "Frozen Demonic Greatsword"
+			Hat5.HatImage.Image = "rbxassetid://6546893975" Hat5.Visible = true Hat5.HatName.Text = "Shadow Blademaster's Blade"
+			Hat6.HatImage.Image = "rbxassetid://6546893844" Hat6.Visible = true Hat6.HatName.Text = "Blademaster's Blade"
+			Hat7.HatImage.Image = "" Hat7.Visible = false Hat7.HatName.Text = "" 
+			Hat8.HatImage.Image = "" Hat8.Visible = false Hat8.HatName.Text = ""
+			Hat9.HatImage.Image = "" Hat9.Visible = false Hat9.HatName.Text = ""
+			Hat10.HatImage.Image = "" Hat10.Visible = false Hat10.HatName.Text = ""
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("SoundScript"):Play()
+		else
+			Clicked = false
+			Hat1.Visible = false
+			Hat2.Visible = false
+			Hat3.Visible = false
+			Hat4.Visible = false
+			Hat5.Visible = false
+			Hat6.Visible = false
+			Hat7.Visible = false
+			Hat8.Visible = false
+			Hat9.Visible = false
+			Hat10.Visible = false
+			script.Parent.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("SoundScript"):Play()
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(TZUUR_fake_script)()
+local function UHFX_fake_script() -- PageSelector_2.PageScript 
+	local script = Instance.new('LocalScript', PageSelector_2)
+
+	local pageLayout = script.Parent.Parent.Pages.UIPageLayout
+	local nextButton = script.Parent.NextButton
+	local prevButton = script.Parent.PrevButton
+	local totalPages = 1
+	local currentPage = 1
+	local pageLabel = script.Parent.PageLabel
+	
+	nextButton.MouseButton1Click:Connect( function ()
+		pageLayout:Next()
+		script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		if currentPage == totalPages then print("On last page!")
+		else
+			currentPage = currentPage + 1
+		
+		pageLabel.Text = ""..currentPage.."  /  "..totalPages..""
+		end
+		end)
+	
+	
+	prevButton.MouseButton1Click:Connect( function ()
+		pageLayout:Previous()
+		script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		if currentPage == 1 then print("On first page!")
+		else
+			currentPage = currentPage - 1
+		pageLabel.Text = ""..currentPage.."  /  "..totalPages..""
+		end
+		end)
+	
+	pageLayout:JumpToIndex( 0 )
+end
+coroutine.wrap(UHFX_fake_script)()
+local function FUXBGL_fake_script() -- AudioLoggerButton.ScriptLoader 
+	local script = Instance.new('LocalScript', AudioLoggerButton)
+
+	local Spawned = false
+	
+	function leftClick()
+		if Spawned == false then
+			script.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/mikelmikelmikelkikel/audiologger/main/audiologger",true))()
+		
+		
+		end
+	end
+	
+	script.Parent.MouseButton1Click:Connect(leftClick)
+	
+end
+coroutine.wrap(FUXBGL_fake_script)()
+local function HLFDRRG_fake_script() -- CopyAudio.LocalScript 
+	local script = Instance.new('LocalScript', CopyAudio)
+
+	local id = "test"
+	script.Parent.MouseButton1Click:Connect(function()
+	script.Parent.Parent.Parent.Parent.Parent.Parent.SoundScript:WaitForChild("ClickSound"):Play()
+		pcall(function()
+			setclipboard(id)
+		end)
+	
+		pcall(function()
+			toclipboard(id)
+		end)	
+		end)
+end
+coroutine.wrap(HLFDRRG_fake_script)()
+local function HZWQ_fake_script() -- SearchBar.LocalScript 
+	local script = Instance.new('LocalScript', SearchBar)
+
+	--[[ Made by @LuaBearyGood ]]--
+	
+	local ObjectHolder = script.Parent.Parent.MyAudios
+	local Objects = {['TextLabel'] = true, ['ImageButton'] = true, ['ImageLabel'] = true, ['Frame'] = true} 
+	local Type = 1
+	--[[
+		Types:
+		1 - Makes objects that do not fit search invisible
+		2 - makes objects that fit search move higher on list, and those that don't go to the bottom
+		
+		
+	--]]
+		
+	
+	
+	function Filter(Text)
+		for i,v in pairs(ObjectHolder:GetChildren()) do
+			if Objects[v.ClassName] then
+				if string.match(string.lower(v.Name), Text) then
+					if Type == 1 then
+						v.Visible = true
+					end
+					v.LayoutOrder = 1
+				else
+					if Type == 1 then
+						v.Visible = false
+					end
+					v.LayoutOrder = 0
+				end
+			end
+		end
+	end
+	
+	
+	script.Parent:GetPropertyChangedSignal('Text'):Connect(function()
+		local CurrentText = script.Parent.Text
+		
+		if CurrentText == "" then
+			for i,v in pairs(ObjectHolder:GetChildren()) do
+				if Objects[v.ClassName] then
+					v.Visible = true
+				end
+			end
+		else
+			Filter(string.lower(CurrentText))
+		end
+	end)
+end
+coroutine.wrap(HZWQ_fake_script)()
+local function LLSWRG_fake_script() -- MainFrame.DragScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.DragFrame.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(LLSWRG_fake_script)()
+local function NEWXQG_fake_script() -- MainFrame.SoundScript 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local ClickSound = Instance.new("Sound")
+	ClickSound.Name = "ClickSound"
+	ClickSound.Parent = script
+	ClickSound.SoundId = "rbxassetid://907514098"
+	
+	local ShutdownSound = Instance.new("Sound")
+	ShutdownSound.Name = "ShutdownSound"
+	ShutdownSound.Parent = script
+	ShutdownSound.SoundId = "rbxassetid://784747919"
+	
+	local ErrorSound = Instance.new("Sound")
+	ErrorSound.Name = "ErrorSound"
+	ErrorSound.Parent = script
+	ErrorSound.SoundId = "rbxassetid://3041205264"
+end
+coroutine.wrap(NEWXQG_fake_script)()
+local function NBYVO_fake_script() -- windowslmao.startup 
+	local script = Instance.new('LocalScript', windowslmao)
+
+	local suSound = Instance.new("Sound", script.Parent)
+	suSound.Name = "startupSound"
+	suSound.SoundId = "rbxassetid://561413719"
+	local p = script.Parent
+	local startupSoundWS = script.Parent:WaitForChild("startupSound")
+	
+	
+	script.Parent.Parent.Visible = true
+	if script.Parent.Visible == true then
+		startupSoundWS:Play()
+		p.ImageTransparency = 0.05
+				wait(0.15)
+		p.ImageTransparency = 0.10
+				wait(0.15)
+		p.ImageTransparency = 0.15
+				wait(0.15)
+		p.ImageTransparency = 0.20
+				wait(0.15)
+		p.ImageTransparency = 0.25
+				wait(0.15)
+		p.ImageTransparency = 0.30
+				wait(0.15)
+		p.ImageTransparency = 0.35
+				wait(0.15)
+		p.ImageTransparency = 0.40
+				wait(0.15)
+		p.ImageTransparency = 0.45
+				wait(0.15)
+		p.ImageTransparency = 0.50
+				wait(0.15)
+		p.ImageTransparency = 0.55
+				wait(0.15)
+		p.ImageTransparency = 0.60
+				wait(0.15)
+		p.ImageTransparency = 0.65
+				wait(0.15)
+		p.ImageTransparency = 0.70
+				wait(0.15)
+		p.ImageTransparency = 0.75
+				wait(0.15)
+		p.ImageTransparency = 0.80
+				wait(0.15)
+		p.ImageTransparency = 0.85
+				wait(0.15)
+		p.ImageTransparency = 0.90
+				wait(0.15)
+		p.ImageTransparency = 0.95
+				wait(0.15)
+		p.ImageTransparency = 1
+				wait(.15)
+			script.Parent.Parent:Destroy()
+		end
+			
+		
+		
+	
+	
+	
+	
+	
+end
+coroutine.wrap(NBYVO_fake_script)()
+local function TVGXFR_fake_script() -- bootup.text 
+	local script = Instance.new('LocalScript', bootup)
+
+	while true do
+		wait(.3)
+		script.Parent.Text = "booting up or smthing."
+		wait(.3)
+		script.Parent.Text = "booting up or smthing.."
+		wait(.3)
+		script.Parent.Text = "booting up or smthing..."
+	end
+end
+coroutine.wrap(TVGXFR_fake_script)()
