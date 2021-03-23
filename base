@@ -168,6 +168,8 @@ coroutine.wrap(RXWPNG_fake_script)()
 local function GFWWZT_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
+	script.Parent.Name = "SoundScript"
+
 	local ClickSound = Instance.new("Sound")
 	ClickSound.Name = "ClickSound"
 	ClickSound.Parent = script
