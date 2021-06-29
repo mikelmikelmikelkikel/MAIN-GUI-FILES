@@ -5,7 +5,6 @@
 
 local WindowsXP = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
-local DragFrame = Instance.new("Frame")
 local XPBackground = Instance.new("ImageLabel")
 local Title = Instance.new("TextLabel")
 local Close = Instance.new("ImageButton")
@@ -47,14 +46,6 @@ MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 MainFrame.BackgroundTransparency = 1.000
 MainFrame.Position = UDim2.new(0.381033212, 0, 0.235494807, 0)
 MainFrame.Size = UDim2.new(0, 278, 0, 465)
-
-DragFrame.Name = "DragFrame"
-DragFrame.Parent = MainFrame
-DragFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DragFrame.BackgroundTransparency = 1.000
-DragFrame.Position = UDim2.new(0.101372041, 0, 0, 0)
-DragFrame.Size = UDim2.new(0, 141, 0, 31)
-DragFrame.Visible = false
 
 XPBackground.Name = "XPBackground"
 XPBackground.Parent = MainFrame
@@ -312,53 +303,7 @@ plrImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function KLTA_fake_script() -- MainFrame.DragScript 
-	local script = Instance.new('LocalScript', MainFrame)
-
-	script.Name = "DragScript"
-	
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.DragFrame.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(KLTA_fake_script)()
-local function VDON_fake_script() -- MainFrame.SoundScript 
+local function VKEHP_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "SoundScript"
@@ -378,8 +323,8 @@ local function VDON_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(VDON_fake_script)()
-local function RITKVVM_fake_script() -- Close.CloseScript 
+coroutine.wrap(VKEHP_fake_script)()
+local function PXOEP_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -390,8 +335,8 @@ local function RITKVVM_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(RITKVVM_fake_script)()
-local function PQRVH_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(PXOEP_fake_script)()
+local function DXFW_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -402,8 +347,8 @@ local function PQRVH_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(PQRVH_fake_script)()
-local function BKDHKL_fake_script() -- Minimize.MinimizeScript 
+coroutine.wrap(DXFW_fake_script)()
+local function WCNQEB_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -414,8 +359,8 @@ local function BKDHKL_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(BKDHKL_fake_script)()
-local function LKSNHJH_fake_script() -- Home.HomeScript 
+coroutine.wrap(WCNQEB_fake_script)()
+local function JFWOE_fake_script() -- Home.HomeScript 
 	local script = Instance.new('LocalScript', Home)
 
 	local Menus = script.Parent.Parent.Parent:WaitForChild("Menus")
@@ -432,8 +377,8 @@ local function LKSNHJH_fake_script() -- Home.HomeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(LKSNHJH_fake_script)()
-local function DFYPI_fake_script() -- Arrow.OpenScript 
+coroutine.wrap(JFWOE_fake_script)()
+local function QZWBV_fake_script() -- Arrow.OpenScript 
 	local script = Instance.new('LocalScript', Arrow)
 
 	local Open = false
@@ -456,8 +401,8 @@ local function DFYPI_fake_script() -- Arrow.OpenScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(DFYPI_fake_script)()
-local function IBLICI_fake_script() -- Character.LocalScript 
+coroutine.wrap(QZWBV_fake_script)()
+local function SMFDAVT_fake_script() -- Character.LocalScript 
 	local script = Instance.new('LocalScript', Character)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -478,8 +423,8 @@ local function IBLICI_fake_script() -- Character.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(IBLICI_fake_script)()
-local function POAHY_fake_script() -- Scripts.LocalScript 
+coroutine.wrap(SMFDAVT_fake_script)()
+local function FGXIJ_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -500,8 +445,8 @@ local function POAHY_fake_script() -- Scripts.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(POAHY_fake_script)()
-local function XHWJG_fake_script() -- HatScripts.LocalScript 
+coroutine.wrap(FGXIJ_fake_script)()
+local function DZKXH_fake_script() -- HatScripts.LocalScript 
 	local script = Instance.new('LocalScript', HatScripts)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -522,8 +467,8 @@ local function XHWJG_fake_script() -- HatScripts.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(XHWJG_fake_script)()
-local function XSAGFS_fake_script() -- Tool.LocalScript 
+coroutine.wrap(DZKXH_fake_script)()
+local function LRHEQGO_fake_script() -- Tool.LocalScript 
 	local script = Instance.new('LocalScript', Tool)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -544,8 +489,8 @@ local function XSAGFS_fake_script() -- Tool.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(XSAGFS_fake_script)()
-local function XRYNAX_fake_script() -- Players.LocalScript 
+coroutine.wrap(LRHEQGO_fake_script)()
+local function KYHI_fake_script() -- Players.LocalScript 
 	local script = Instance.new('LocalScript', Players)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -566,8 +511,8 @@ local function XRYNAX_fake_script() -- Players.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(XRYNAX_fake_script)()
-local function JZCAMMZ_fake_script() -- randomizedtext.randomized; 
+coroutine.wrap(KYHI_fake_script)()
+local function QTSBD_fake_script() -- randomizedtext.randomized; 
 	local script = Instance.new('LocalScript', randomizedtext)
 
 	local Sentences = {"sorry bro im neutered","mikeliscoolerthansomeshit","sorry about saying only biden suppoerts like pepsi i had some bottled cold and it was good", "#### ###", "amogus", "windmill of friendship 卐", "dougie help im bouta bust", "ayo dougie, im from the sah-ooth", "alright Dougie, your time is up", "henry jr and henry cr just chillin on the stairs until roberta kicks jr:(","ahahahaahah pointy plane go BRRRRRRRRRRRRRRR", "420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420", "😳 bro?", "cnn fakes their news cause gay", "we had to call the popo to fix a pipe in the pines house today LOL", "buddy is currently on my epik blue gaming chair trying to eat my mcdonalds sandwhich","biden licks little boys","ranch dip","this text is randomly generated lmao","biden is a garbage president","diet coke tastes very good L","cheese", "alpharad makes good content", "follow DietCokeTastesGood on roblox or you're gay", "only biden supporters like pepsi", "f", "windows pog?!??!?", "ivan is cool", "#superstraight", "heterosexual is the best kind of sexual", "alt+f4 pls", "i just ate a Chobani flip S'more yogurt and it was  good", "bottom text", "top text", "69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69", "Ivan is eating yummy chips rn and they r very pog", "drippy drippy goku XDXDXD"}
@@ -578,8 +523,8 @@ local function JZCAMMZ_fake_script() -- randomizedtext.randomized;
 	
 	
 end
-coroutine.wrap(JZCAMMZ_fake_script)()
-local function ZXCMKB_fake_script() -- randomizedimage.randomized; 
+coroutine.wrap(QTSBD_fake_script)()
+local function WGMT_fake_script() -- randomizedimage.randomized; 
 	local script = Instance.new('LocalScript', randomizedimage)
 
 	local Images = {"rbxassetid://4759703774", "rbxassetid://1505144534", "rbxassetid://2663223907", "rbxassetid://5666154615", "rbxassetid://1639707845", "rbxassetid://1315317859", "rbxassetid://6464730351", "rbxassetid://6494652399", "rbxassetid://6437395672", "rbxassetid://6425796280", "rbxassetid://6075395846", "rbxassetid://5584500731", "rbxassetid://5610942639", "rbxassetid://5160712341", "rbxassetid://6549351471", "rbxassetid://6550268109", "rbxassetid://5655028554", "rbxassetid://4933468761", "rbxassetid://5710497007", "rbxassetid://5741657918", "rbxassetid://5768229099", "rbxassetid://5898091102", "rbxassetid://5952824955", "rbxassetid://5947794308", "rbxassetid://6032841223", "rbxassetid://4806105685", "rbxassetid://6093779811", "rbxassetid://6117941170", "rbxassetid://6116415183", "rbxassetid://6117966004", "rbxassetid://6109937685", "rbxassetid://5460374612", "rbxassetid://6165969352", "rbxassetid://6002645804", "rbxassetid://6197068901", "rbxassetid://6370900679", "rbxassetid://6243555061", "rbxassetid://6251050057", "rbxassetid://374838431", "rbxassetid://6523940003", "rbxassetid://6447447883"}
@@ -588,8 +533,8 @@ local function ZXCMKB_fake_script() -- randomizedimage.randomized;
 		wait(6.9) 
 	end
 end
-coroutine.wrap(ZXCMKB_fake_script)()
-local function AYPCWZ_fake_script() -- plrLeaderboardTemplate.handler 
+coroutine.wrap(WGMT_fake_script)()
+local function OVVE_fake_script() -- plrLeaderboardTemplate.handler 
 	local script = Instance.new('LocalScript', plrLeaderboardTemplate)
 
 	
@@ -649,4 +594,44 @@ local function AYPCWZ_fake_script() -- plrLeaderboardTemplate.handler
 	
 	
 end
-coroutine.wrap(AYPCWZ_fake_script)()
+coroutine.wrap(OVVE_fake_script)()
+local function JHXWD_fake_script() -- MainFrame.SmoothDrag 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	local UserInputService = game:GetService("UserInputService")
+	local SmoothDragToggle
+	local SmoothDragInput
+	local SmoothDragStart
+	local SmoothDragSpeed = 0.3
+	function SmoothDrag(Frame)
+		local function UpdateSmoothDragInput(Input)
+			local Delta = Input.Position - SmoothDragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
+			game:GetService("TweenService"):Create(Frame, TweenInfo.new(SmoothDragSpeed), {Position = Position}):Play()
+		end
+		Frame.InputBegan:Connect(function(Input)
+			if (Input.UserInputType == Enum.UserInputType.MouseButton1 or Input.UserInputType == Enum.UserInputType.Touch) and UserInputService:GetFocusedTextBox() == nil then
+				SmoothDragToggle = true
+				SmoothDragStart = Input.Position
+				startPos = Frame.Position
+				Input.Changed:Connect(function()
+					if Input.UserInputState == Enum.UserInputState.End then
+						SmoothDragToggle = false
+					end
+				end)
+			end
+		end)
+		Frame.InputChanged:Connect(function(Input)
+			if Input.UserInputType == Enum.UserInputType.MouseMovement or Input.UserInputType == Enum.UserInputType.Touch then
+				SmoothDragInput = Input
+			end
+		end)
+		game:GetService("UserInputService").InputChanged:Connect(function(Input)
+			if Input == SmoothDragInput and SmoothDragToggle then
+				UpdateSmoothDragInput(Input)
+			end
+		end)
+	end
+	SmoothDrag(script.Parent)
+end
+coroutine.wrap(JHXWD_fake_script)()
