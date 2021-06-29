@@ -303,7 +303,7 @@ plrImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
 -- Scripts:
 
-local function DRHMU_fake_script() -- MainFrame.SoundScript 
+local function MVODQW_fake_script() -- MainFrame.SoundScript 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	script.Name = "SoundScript"
@@ -323,8 +323,8 @@ local function DRHMU_fake_script() -- MainFrame.SoundScript
 	ErrorSound.Parent = script
 	ErrorSound.SoundId = "rbxassetid://3041205264"
 end
-coroutine.wrap(DRHMU_fake_script)()
-local function MDEE_fake_script() -- Close.CloseScript 
+coroutine.wrap(MVODQW_fake_script)()
+local function PWIBSL_fake_script() -- Close.CloseScript 
 	local script = Instance.new('LocalScript', Close)
 
 	function leftClick()
@@ -335,8 +335,8 @@ local function MDEE_fake_script() -- Close.CloseScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(MDEE_fake_script)()
-local function HHSCKYR_fake_script() -- Maximize.MaximizeScript 
+coroutine.wrap(PWIBSL_fake_script)()
+local function CZXVQ_fake_script() -- Maximize.MaximizeScript 
 	local script = Instance.new('LocalScript', Maximize)
 
 	function leftClick()
@@ -347,8 +347,8 @@ local function HHSCKYR_fake_script() -- Maximize.MaximizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(HHSCKYR_fake_script)()
-local function BRKSNDL_fake_script() -- Minimize.MinimizeScript 
+coroutine.wrap(CZXVQ_fake_script)()
+local function MGDO_fake_script() -- Minimize.MinimizeScript 
 	local script = Instance.new('LocalScript', Minimize)
 
 	function leftClick()
@@ -359,8 +359,8 @@ local function BRKSNDL_fake_script() -- Minimize.MinimizeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(BRKSNDL_fake_script)()
-local function VPZYGC_fake_script() -- Home.HomeScript 
+coroutine.wrap(MGDO_fake_script)()
+local function RLBZ_fake_script() -- Home.HomeScript 
 	local script = Instance.new('LocalScript', Home)
 
 	local Menus = script.Parent.Parent.Parent:WaitForChild("Menus")
@@ -377,8 +377,8 @@ local function VPZYGC_fake_script() -- Home.HomeScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(VPZYGC_fake_script)()
-local function RKAA_fake_script() -- Arrow.OpenScript 
+coroutine.wrap(RLBZ_fake_script)()
+local function EHDWAUU_fake_script() -- Arrow.OpenScript 
 	local script = Instance.new('LocalScript', Arrow)
 
 	local Open = false
@@ -401,8 +401,8 @@ local function RKAA_fake_script() -- Arrow.OpenScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(RKAA_fake_script)()
-local function XUPAXOV_fake_script() -- Character.LocalScript 
+coroutine.wrap(EHDWAUU_fake_script)()
+local function UVUTQO_fake_script() -- Character.LocalScript 
 	local script = Instance.new('LocalScript', Character)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -423,8 +423,8 @@ local function XUPAXOV_fake_script() -- Character.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(XUPAXOV_fake_script)()
-local function YUDMH_fake_script() -- Scripts.LocalScript 
+coroutine.wrap(UVUTQO_fake_script)()
+local function SKKWAT_fake_script() -- Scripts.LocalScript 
 	local script = Instance.new('LocalScript', Scripts)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -445,8 +445,8 @@ local function YUDMH_fake_script() -- Scripts.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(YUDMH_fake_script)()
-local function SKSP_fake_script() -- HatScripts.LocalScript 
+coroutine.wrap(SKKWAT_fake_script)()
+local function JLVVSRY_fake_script() -- HatScripts.LocalScript 
 	local script = Instance.new('LocalScript', HatScripts)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -467,8 +467,8 @@ local function SKSP_fake_script() -- HatScripts.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(SKSP_fake_script)()
-local function EFRF_fake_script() -- Tool.LocalScript 
+coroutine.wrap(JLVVSRY_fake_script)()
+local function JNHWGSW_fake_script() -- Tool.LocalScript 
 	local script = Instance.new('LocalScript', Tool)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -489,8 +489,8 @@ local function EFRF_fake_script() -- Tool.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(EFRF_fake_script)()
-local function XRQGH_fake_script() -- Players.LocalScript 
+coroutine.wrap(JNHWGSW_fake_script)()
+local function QXVCQY_fake_script() -- Players.LocalScript 
 	local script = Instance.new('LocalScript', Players)
 
 	local Menus = script.Parent.Parent.Parent.Parent.Menus
@@ -511,8 +511,8 @@ local function XRQGH_fake_script() -- Players.LocalScript
 	script.Parent.MouseButton1Click:Connect(leftClick)
 	
 end
-coroutine.wrap(XRQGH_fake_script)()
-local function KRIVA_fake_script() -- randomizedtext.randomized; 
+coroutine.wrap(QXVCQY_fake_script)()
+local function CLBWIXJ_fake_script() -- randomizedtext.randomized; 
 	local script = Instance.new('LocalScript', randomizedtext)
 
 	local Sentences = {"sorry bro im neutered","mikeliscoolerthansomeshit","sorry about saying only biden suppoerts like pepsi i had some bottled cold and it was good", "#### ###", "amogus", "windmill of friendship 卐", "dougie help im bouta bust", "ayo dougie, im from the sah-ooth", "alright Dougie, your time is up", "henry jr and henry cr just chillin on the stairs until roberta kicks jr:(","ahahahaahah pointy plane go BRRRRRRRRRRRRRRR", "420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420 420", "😳 bro?", "cnn fakes their news cause gay", "we had to call the popo to fix a pipe in the pines house today LOL", "buddy is currently on my epik blue gaming chair trying to eat my mcdonalds sandwhich","biden licks little boys","ranch dip","this text is randomly generated lmao","biden is a garbage president","diet coke tastes very good L","cheese", "alpharad makes good content", "follow DietCokeTastesGood on roblox or you're gay", "only biden supporters like pepsi", "f", "windows pog?!??!?", "ivan is cool", "#superstraight", "heterosexual is the best kind of sexual", "alt+f4 pls", "i just ate a Chobani flip S'more yogurt and it was  good", "bottom text", "top text", "69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69 69", "Ivan is eating yummy chips rn and they r very pog", "drippy drippy goku XDXDXD"}
@@ -523,8 +523,8 @@ local function KRIVA_fake_script() -- randomizedtext.randomized;
 	
 	
 end
-coroutine.wrap(KRIVA_fake_script)()
-local function CWRI_fake_script() -- randomizedimage.randomized; 
+coroutine.wrap(CLBWIXJ_fake_script)()
+local function FQSEI_fake_script() -- randomizedimage.randomized; 
 	local script = Instance.new('LocalScript', randomizedimage)
 
 	local Images = {"rbxassetid://4759703774", "rbxassetid://1505144534", "rbxassetid://2663223907", "rbxassetid://5666154615", "rbxassetid://1639707845", "rbxassetid://1315317859", "rbxassetid://6464730351", "rbxassetid://6494652399", "rbxassetid://6437395672", "rbxassetid://6425796280", "rbxassetid://6075395846", "rbxassetid://5584500731", "rbxassetid://5610942639", "rbxassetid://5160712341", "rbxassetid://6549351471", "rbxassetid://6550268109", "rbxassetid://5655028554", "rbxassetid://4933468761", "rbxassetid://5710497007", "rbxassetid://5741657918", "rbxassetid://5768229099", "rbxassetid://5898091102", "rbxassetid://5952824955", "rbxassetid://5947794308", "rbxassetid://6032841223", "rbxassetid://4806105685", "rbxassetid://6093779811", "rbxassetid://6117941170", "rbxassetid://6116415183", "rbxassetid://6117966004", "rbxassetid://6109937685", "rbxassetid://5460374612", "rbxassetid://6165969352", "rbxassetid://6002645804", "rbxassetid://6197068901", "rbxassetid://6370900679", "rbxassetid://6243555061", "rbxassetid://6251050057", "rbxassetid://374838431", "rbxassetid://6523940003", "rbxassetid://6447447883"}
@@ -533,8 +533,8 @@ local function CWRI_fake_script() -- randomizedimage.randomized;
 		wait(6.9) 
 	end
 end
-coroutine.wrap(CWRI_fake_script)()
-local function CILLRHO_fake_script() -- plrLeaderboardTemplate.handler 
+coroutine.wrap(FQSEI_fake_script)()
+local function BPEJ_fake_script() -- plrLeaderboardTemplate.handler 
 	local script = Instance.new('LocalScript', plrLeaderboardTemplate)
 
 	
@@ -553,7 +553,9 @@ local function CILLRHO_fake_script() -- plrLeaderboardTemplate.handler
 	
 	script.Parent.teleport.MouseButton1Click:connect(function()
 		
-		local desiredPlrPosition = game.Workspace[victimName].HumanoidRootPart.CFrame
+		print('clicked teleport')
+		
+		local desiredPlrPosition = game.Workspace[victimName].PrimaryPart.CFrame
 		
 		plr.Character:SetPrimaryPartCFrame(desiredPlrPosition + Vector3.new(0, 0, 3))
 		
@@ -564,6 +566,9 @@ local function CILLRHO_fake_script() -- plrLeaderboardTemplate.handler
 	currentlySpectating = false
 	
 	script.Parent.spectate.MouseButton1Click:connect(function()
+		
+		print('clicked spectate')
+		
 		local cam = game.Workspace.CurrentCamera
 		if currentlySpectating == false then 
 			local victomModel = game.Workspace[victimName]
@@ -594,8 +599,8 @@ local function CILLRHO_fake_script() -- plrLeaderboardTemplate.handler
 	
 	
 end
-coroutine.wrap(CILLRHO_fake_script)()
-local function PHVMVY_fake_script() -- MainFrame.SmoothDrag 
+coroutine.wrap(BPEJ_fake_script)()
+local function BPFFJ_fake_script() -- MainFrame.SmoothDrag 
 	local script = Instance.new('LocalScript', MainFrame)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -634,4 +639,4 @@ local function PHVMVY_fake_script() -- MainFrame.SmoothDrag
 	end
 	SmoothDrag(script.Parent)
 end
-coroutine.wrap(PHVMVY_fake_script)()
+coroutine.wrap(BPFFJ_fake_script)()
